@@ -1,5 +1,5 @@
 <?php
-require_once '../config/conexacao.php';
+include '../config/conexacao.php';
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $nome = $_POST['nome'];
     $nacionalidade = $_POST['nacionalidade'];
