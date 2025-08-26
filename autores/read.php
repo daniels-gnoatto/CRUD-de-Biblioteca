@@ -21,7 +21,7 @@ $autores = $stmt->fetchAll();
 <td><?= $a['nacionalidade'] ?></td>
 <td><?= $a['ano_nascimento'] ?></td>
 <td>
-<a href="edit.php?id=<?= $a['id_autor'] ?>">Editar</a> |
+<a href="update.php?id=<?= $a['id_autor'] ?>">Editar</a> |
 <a href="delete.php?id=<?= $a['id_autor'] ?>">Excluir</a>
 </td>
 </tr>

@@ -6,7 +6,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $ano = $_POST['ano_nascimento'];
     $stmt = $pdo->prepare('INSERT INTO autores (nome, nacionalidade, ano_nascimento) VALUES (?, ?, ?)');
     $stmt->execute([$nome, $nacionalidade, $ano]);
-    header('Location: index.php');
+    header('Location: read.php');
     exit;
 }
 ?>
