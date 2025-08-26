@@ -33,7 +33,7 @@ $emprestimos = $stmt->fetchAll();
 <td><?= $e['data_devolucao'] ?></td>
 
 <td>
-<a href="update.php?id=<?= $e['id_emprestimo'] ?>">Editar</a> |
+<a href="update.php?id=<?= $e['id_emprestimo'] ?>">Devolução</a> |
 <a href="delete.php?id=<?= $e['id_emprestimo'] ?>">Excluir</a>
 </td>
 </tr>
