@@ -8,7 +8,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $telefone = $_POST['telefone'];
     $stmt = $pdo->prepare('INSERT INTO leitores (nome, email, telefone) VALUES (?, ?, ?)');
     $stmt->execute([$nome, $email, $telefone]);
-    header('Location: index.php');
+    header('Location: read.php');
     exit;
 }
 ?>
